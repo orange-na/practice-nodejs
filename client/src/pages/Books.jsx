@@ -19,8 +19,8 @@ export default function Books(){
   },[]);
 
     return (
-      <>
-      <div>
+      <div className="box">
+      <div className="items">
         <h1>Yuto Book Shop</h1>
         <div className="books">
           {books.map((book) => {
@@ -30,13 +30,15 @@ export default function Books(){
                 <h2>{ book.title }</h2>
                 <p>{ book.desc }</p>
                 <span>{ book.price }</span>
+                <button className="update">Update</button>
+                <button className="delete">Delete</button>
               </div>
             )
           })}
         </div>
         <button><Link href='/Add'>Add new book</Link></button>
       </div>
-      </>
+      </div>
     )
   }
   

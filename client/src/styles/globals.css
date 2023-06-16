@@ -1,0 +1,35 @@
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  padding: 0 100px;
+}
+
+.books {
+  display: flex;
+  gap: 10px;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  background-color: rgb(199, 242, 242);
+}
+
+.update {
+  color: blue;
+}
+
+.delete {
+  color: red;
+}
