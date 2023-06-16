@@ -33,3 +33,19 @@ img {
 .delete {
   color: red;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+  margin: auto;
+
+}
+.form input {
+  padding: 10px;
+}
+
+.update-items {
+  text-align: center;
+}
