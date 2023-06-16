@@ -31,11 +31,12 @@ app.get('/books', (req, res) => {
 })
 
 app.post('/books', (req, res) => {
-    const q = 'INSERT INTO test (`title`, `desc`, `cover`) VALUES (?)'
+    const q = 'INSERT INTO test (`title`, `desc`, `cover`,`price`) VALUES (?)'
     const values = [
         req.body.title,
         req.body.desc,
         req.body.cover,
+        req.body.price,
         ] 
     db.query(q,[values], (err, restults) => {
         if(err) return res.json(err);
